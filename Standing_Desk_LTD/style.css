@@ -1,0 +1,295 @@
+/* navbar */
+.nav-bar-container {
+  background-color: #F5EEE6;
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.nav-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-bar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-links li {
+  display: inline-block;
+  margin-right: 90px;
+}
+
+.nav-bar-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar-links li a:hover {
+  color: #6C5F5B;
+  padding: 5px;
+  background-color: #FFFBEB;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F5EEE6;
+  min-width: 200px;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content li a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-bar-logo img {
+  margin-top: -5px;
+  margin-left: 45px;
+  width: 65px;
+  height: auto;
+}
+
+
+
+/* home */
+.home-banner{
+  background-image: url(images/home_banner.png);
+  background-size: 100%;
+  height: 600px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.paragraphs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  padding-top: 30px;
+}
+
+.paragraphs-container p {
+  margin: 20px 0;
+}
+
+.slogan{
+  font-family: "Molle", cursive;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0.5%;
+  display: grid;
+}
+
+#first-slogan{
+  font-size: 75px;
+}
+
+#second-slogan{
+  font-size: 40px;
+  margin-bottom: 5%;
+}
+
+.shop-now-button {
+  margin-right: 200px;
+  cursor: pointer;
+  background-color: #F5EEE6;
+  color: #B0C5A4;
+  font-size: 4rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  align-self: last baseline;
+  height: auto;
+  width: auto;
+}
+
+.shop-now-button:hover{
+  cursor: pointer;
+  background-color: #DAC0A3;
+  color: #FFCAD4;
+  font-weight: bolder;
+}
+
+
+/* Health Benefit */
+.health-benefit-container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+iframe{
+  width: 670px;
+  height: 375px;
+}
+
+#health-benefit-content-container {
+  font-family: Arial, sans-serif;
+}
+
+#health-benefit-h1 {
+  color: #1a1919;
+}
+
+#health-benefit-h2 {
+  color: #3a3a3a;
+}
+
+#health-benefit-h3 {
+  color: #585858;
+}
+
+.health-benefit-text {
+  color: black;
+}
+
+.health-benefit-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
+  height: 30px;
+  background-color: #F5EEE6;
+  padding: 15px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
+}
+
+.footer-links a:hover{
+  color: #FFCAD4;
+  font-weight: bolder;
+}
+
+.footer-text {
+  margin-top: 3px;
+}
+
+
+
+
+/* responsive */
+@media (max-width: 600px)
+{
+  /*Navbar*/
+  .nav-bar-container{
+    max-width: auto;
+    height: 40px;
+  }
+
+  .nav-bar-logo {
+    display: none;
+  }
+
+  .nav-bar-links{
+    font-size: 12.5px;
+    padding: 0;
+  }
+
+  .nav-bar-links li{
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 0;
+  }
+
+
+  /*Footer*/
+  .footer-container{
+    max-width: auto;
+  }
+
+
+
+  body{
+    max-width: auto;
+    padding: 0%;
+  }
+
+  h1, h2, h3, p, ul, li{
+    font-size: smaller;
+  }
+
+
+
+  /*Home*/
+
+  .home-container {
+    padding-bottom: 20px;
+  }
+
+  #first-slogan{
+    font-size: 19px;
+  }
+
+  #second-slogan{
+    font-size: 16px;
+  }
+
+  .shop-now-button {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .home-banner{
+    background-size: 100%;
+    height: 175px;
+  }
+
+  .shop-now-button {
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+}
